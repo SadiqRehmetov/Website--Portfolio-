@@ -911,6 +911,9 @@ nav .container .navbar i {
   flex-direction: column;
   gap: 30px;
 }
+#footer-up .container .in-footer-up div .p {
+  padding: 5px 70px 5px 0px;
+}
 #footer-up .container .in-footer-up div img {
   width: 150px;
 }
@@ -950,6 +953,7 @@ footer .container .in-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
   padding: 50px 0px;
   color: white;
 }
@@ -957,7 +961,7 @@ footer .container .in-footer .right {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 70px;
+  gap: 20px;
 }
 footer .container .in-footer .right a {
   color: white;
@@ -968,6 +972,72 @@ footer .container .in-footer .right a:hover {
 }
 
 @media screen and (max-width: 991px) {
+  .container {
+    max-width: 768px;
+    padding: 0px 20px;
+  }
+  nav {
+    background-color: #e9e7e5;
+  }
+  nav .container .navbar {
+    padding: 10px 0px;
+    justify-content: space-between;
+  }
+  nav .container .navbar .btn {
+    display: none;
+  }
+  nav .container .navbar ul {
+    display: none;
+  }
+  nav .container .navbar i {
+    display: block;
+  }
+  #banner .container .in-banner {
+    flex-direction: column-reverse;
+    gap: 40px;
+    padding: 10px 0px;
+  }
+  #banner .container .in-banner .particl {
+    width: 50px;
+    height: 50px;
+    left: 20px;
+    top: 50px;
+  }
+  #banner .container .in-banner .particl-two {
+    left: calc((100% - 20px) / 2);
+    bottom: 5px;
+    width: 50px;
+    height: 50px;
+  }
+  @keyframes two-part {
+    0% {
+      bottom: 2px;
+    }
+    100% {
+      bottom: 3px;
+    }
+  }
+  #banner .container .in-banner .left-banner {
+    width: 100%;
+  }
+  #banner .container .in-banner .right-banner {
+    width: 100%;
+  }
+  #about .container .in-about {
+    padding: 100px 50px;
+    flex-direction: column;
+  }
+  #about .container .in-about .left-about {
+    width: 100%;
+  }
+  #about .container .in-about .right-about {
+    width: 100%;
+    padding: 80px 0px;
+  }
+  #services .container .in-services .service-cards {
+    padding: 0px 50px;
+    grid-template-columns: repeat(2, auto);
+  }
   #portfolio .container .grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -1051,160 +1121,6 @@ footer .container .in-footer .right a:hover {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-  }
-}
-@media screen and (max-width: 551px) {
-  #portfolio .container .grid {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-  }
-  #portfolio .container .grid .grid-item1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-  #portfolio .container .grid .grid-item1 img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  #portfolio .container .grid .grid-item2 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-  }
-  #portfolio .container .grid .grid-item2 img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  #portfolio .container .grid .grid-item3 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-  }
-  #portfolio .container .grid .grid-item3 img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  #portfolio .container .grid .grid-item4 {
-    grid-column: 1/2;
-    grid-row: 4/5;
-  }
-  #portfolio .container .grid .grid-item4 img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  #portfolio .container .grid .grid-item5 {
-    grid-column: 1/2;
-    grid-row: 5/6;
-  }
-  #portfolio .container .grid .grid-item5 img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  #portfolio .container .grid .grid-item6 {
-    grid-column: 1/2;
-    grid-row: 6/7;
-  }
-  #portfolio .container .grid .grid-item6 img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  #portfolio .container .grid .grid-item7 {
-    grid-column: 1/2;
-    grid-row: 7/8;
-  }
-  #portfolio .container .grid .grid-item7 img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  #portfolio .container .grid .grid-item8 {
-    grid-column: 1/2;
-    grid-row: 8/9;
-  }
-  #portfolio .container .grid .grid-item8 img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-@media screen and (max-width: 991px) {
-  .container {
-    max-width: 768px;
-    padding: 0px 20px;
-  }
-  nav {
-    background-color: #e9e7e5;
-  }
-  nav .container .navbar {
-    padding: 10px 0px;
-    justify-content: space-between;
-  }
-  nav .container .navbar .btn {
-    display: none;
-  }
-  nav .container .navbar ul {
-    display: none;
-  }
-  nav .container .navbar i {
-    display: block;
-  }
-  #banner .container .in-banner {
-    flex-direction: column-reverse;
-    gap: 40px;
-    padding: 10px 0px;
-  }
-  #banner .container .in-banner .particl {
-    width: 50px;
-    height: 50px;
-    left: 20px;
-    top: 50px;
-  }
-  #banner .container .in-banner .particl-two {
-    left: calc((100% - 20px) / 2);
-    bottom: 5px;
-    width: 50px;
-    height: 50px;
-  }
-  @keyframes two-part {
-    0% {
-      bottom: 2px;
-    }
-    100% {
-      bottom: 3px;
-    }
-  }
-  #banner .container .in-banner .left-banner {
-    width: 100%;
-  }
-  #banner .container .in-banner .right-banner {
-    width: 100%;
-  }
-  #about .container .in-about {
-    padding: 100px 50px;
-    flex-direction: column;
-  }
-  #about .container .in-about .left-about {
-    width: 100%;
-  }
-  #about .container .in-about .right-about {
-    width: 100%;
-    padding: 80px 0px;
-  }
-  #services .container .in-services .service-cards {
-    padding: 0px 50px;
-    grid-template-columns: repeat(2, auto);
   }
   #resume .container .in-resume h2 {
     text-align: center;
@@ -1305,6 +1221,90 @@ footer .container .in-footer .right a:hover {
   #services .container .in-services .service-cards {
     padding: 0px;
     grid-template-columns: repeat(1, auto);
+  }
+  #portfolio .container .grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+  #portfolio .container .grid .grid-item1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #portfolio .container .grid .grid-item1 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #portfolio .container .grid .grid-item2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  #portfolio .container .grid .grid-item2 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #portfolio .container .grid .grid-item3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  #portfolio .container .grid .grid-item3 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #portfolio .container .grid .grid-item4 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  #portfolio .container .grid .grid-item4 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #portfolio .container .grid .grid-item5 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  #portfolio .container .grid .grid-item5 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #portfolio .container .grid .grid-item6 {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+  #portfolio .container .grid .grid-item6 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #portfolio .container .grid .grid-item7 {
+    grid-column: 1/2;
+    grid-row: 7/8;
+  }
+  #portfolio .container .grid .grid-item7 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #portfolio .container .grid .grid-item8 {
+    grid-column: 1/2;
+    grid-row: 8/9;
+  }
+  #portfolio .container .grid .grid-item8 img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   #resume .container .in-resume h2 {
     font-size: 30px;
